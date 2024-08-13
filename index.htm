@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Trabajo Práctico 5 de JavaScript">
+    <meta name="author" content="Wunsche, Julieta">
+    <meta name="keywords" content="DOM y BOM">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Trabajo Práctico 5 de JavaScript</title>
+
+</head>
+
+<body>
+    <main>
+        <div class="container mt-3">
+            <h1 class="text-center">Crear Persona</h1>
+            
+            <form id="personaForm">
+                <div class="form-group">
+                    <label for="nombre" class="text-primary">Nombre:</label>
+                    <input type="text" id="nombre" class="form-control " placeholder="Escriba el nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="edad" class="text-primary" >Edad:</label>
+                    <input type="number" id="edad" class="form-control" placeholder="Escriba la edad" required>
+                </div>
+                <div class="form-group">
+                    <label for="anioNac" class="text-primary" >Año de Nacimiento:</label>
+                    <input type="number" id="anioNac" class="form-control" placeholder="Escriba el año de nacimiento" required>
+                </div>
+                <div class="form-group">
+                    <label for="genero" class="text-primary">Género:</label>
+                    <select id="genero" class="form-control" required>
+                        <option value="" disabled selected>Selecciona el género</option>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Femenino">Femenino</option>
+                        
+                    </select>
+                </div>
+                <button type="button" id="crearPersona" class="btn btn-primary mt-3">Crear Persona</button>
+            </form>
+    
+            <div class="mt-4">
+                <button id="mostrarGeneracion" class="btn btn-info mb-3">Mostrar Generación</button>
+                <button id="esMayorDeEdad" class="btn botonMayor mb-3">Es Mayor de Edad</button>
+            </div>
+        </div>
+      
+
+    </main>
+    <footer class="bg-dark-subtle text-center">
+        <p> &copy; Todos los derechos reservados</p>
+    </footer>
+    <script src="./js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
